@@ -130,100 +130,87 @@ The challenge demonstrated how individual phishing emails can be connected to a 
 
 ## Phishing Unfolding — SOC Simulator
 
-I completed the **Phishing Unfolding** SOC Simulator scenario, investigating a simulated phishing attack as it progressed through a corporate environment.
+I completed the **Phishing Unfolding** scenario in the TryHackMe SOC Simulator, investigating a simulated phishing incident as it developed within a corporate environment.
 
-The scenario involved monitoring real-time alerts, identifying suspicious activity and documenting the attack chain.
+The scenario provided practical experience with the SOC investigation workflow, including monitoring alerts, investigating suspicious activity using **Splunk**, analysing supporting log data and documenting findings in case reports.
 
 ### Investigation
 
-The investigation began with a suspicious phishing email containing a malicious ZIP attachment.
+The investigation began with a suspicious phishing email containing a malicious ZIP attachment. I followed the related alerts and investigated the activity occurring on the affected endpoint.
 
-I analysed the subsequent activity and followed the attack through multiple stages, including:
+Key areas of the investigation included:
 
-1. **Phishing Delivery** — a malicious attachment was delivered through email.
-2. **Execution** — the attachment resulted in a malicious `.lnk` file being executed.
-3. **PowerShell Activity** — PowerShell was used to execute malicious commands and establish a foothold.
-4. **Reconnaissance** — the attacker gathered information about the compromised system and environment.
-5. **Active Directory Reconnaissance** — PowerView was used to enumerate information about the environment.
-6. **Data Access & Staging** — a network share containing financial records was accessed and data was copied to a local staging directory.
-7. **Defence Evasion** — the network share was disconnected after the data was staged.
-8. **Data Exfiltration** — the staged data was exfiltrated through DNS tunnelling using encoded data within DNS queries.
-9. **Persistence / Continued Access** — further PowerShell and reverse-shell activity indicated attempts to maintain access.
+- Analysing the suspicious phishing email and attachment
+- Investigating the extracted `.lnk` file
+- Analysing suspicious PowerShell activity
+- Investigating suspicious parent-child process relationships
+- Reviewing Sysmon and endpoint logs in Splunk
+- Investigating suspicious DNS activity
+- Identifying indicators associated with potential data exfiltration
+- Connecting multiple alerts to understand the wider attack chain
+- Documenting findings through SOC case reporting
 
-The investigation demonstrated how individual SIEM alerts can be correlated to reconstruct a wider attack chain. 
+### SIEM Investigation
 
-### Tools & Techniques
+I used **Splunk** to investigate alerts and search relevant logs associated with the affected host.
 
-During the scenario, I worked with:
+This involved moving from individual alerts into the underlying log data to establish whether suspicious activity was connected to the original phishing event.
 
-- **Splunk SIEM**
-- SIEM alert triage
-- Sysmon logs
-- PowerShell analysis
-- File and process analysis
-- Network activity analysis
-- Threat intelligence
-- DNS analysis
-- Incident documentation
-- Cyber Kill Chain analysis
-
-The scenario required analysing alerts and logs to identify the progression of the attack and understand the relationship between different events.
-
-### Key Findings
-
-Several important indicators helped demonstrate the progression of the attack:
-
-- Malicious phishing attachment
-- `.lnk` file execution
-- Suspicious PowerShell activity
-- PowerView activity
-- Network share access
-- Robocopy-based data staging
-- Network share removal
-- DNS tunnelling
-- Encoded data within DNS queries
-
-The combination of these indicators provided evidence of a wider compromise rather than isolated suspicious events. 
+A key part of the investigation was analysing suspicious process activity and DNS queries, which provided additional evidence of malicious behaviour.
 
 ### Attack Chain Analysis
 
-I also applied the **Cyber Kill Chain** to understand the incident as a sequence of stages rather than individual alerts.
+I applied the **Cyber Kill Chain** to help understand the incident as a sequence of related stages rather than treating each alert independently.
 
-This helped connect the phishing email to execution, reconnaissance, command and control, data staging and eventual exfiltration.
+This helped connect the initial phishing email to subsequent execution, reconnaissance, data staging and attempted exfiltration activity.
 
-### Incident Response
+### Case Reporting
 
-The scenario also introduced the importance of considering appropriate remediation following an incident.
+The scenario also required documenting investigation findings through SOC case reports.
 
-Potential response actions included:
+This reinforced the importance of clearly recording:
 
-- Isolating the compromised host
-- Blocking malicious infrastructure
-- Resetting compromised credentials
-- Removing persistence mechanisms
-- Performing malware/antivirus scanning
-- Applying security patches
-- Increasing monitoring
-- Improving email security controls
-- Providing phishing awareness training
+- What happened
+- Which systems and users were affected
+- Evidence supporting the investigation
+- Why an alert should be classified or escalated
+- Recommended remediation actions
 
-The scenario demonstrated that investigation does not end when malicious activity is identified; analysts also need to consider containment, eradication and prevention of recurrence. 
+### Key Takeaways
+
+The scenario demonstrated how a SOC analyst can move from an initial phishing alert to a wider investigation by correlating multiple sources of evidence.
+
+It reinforced the importance of:
+
+- Alert triage
+- SIEM investigation
+- Log analysis
+- Process analysis
+- DNS analysis
+- Threat intelligence
+- Attack chain reconstruction
+- Clear incident documentation
 
 **Skills applied:**
 
 - SIEM alert triage
+- Splunk
 - Log analysis
 - Phishing investigation
-- Threat intelligence
 - Endpoint analysis
 - PowerShell analysis
-- Network analysis
-- DNS tunnelling detection
+- DNS analysis
+- Threat intelligence
+- Cyber Kill Chain
 - Attack chain reconstruction
-- Incident response
-- Cyber Kill Chain analysis
-- Security documentation
+- Incident documentation
+- Case reporting
 
+### Reflection
+
+The Phishing Unfolding scenario helped me understand how individual security alerts can form part of a much larger attack chain.
+
+It was particularly useful for developing my ability to investigate an alert using supporting log data, identify relationships between suspicious events and document findings in a structured SOC case report.
 ---
 
 # Key Takeaways
