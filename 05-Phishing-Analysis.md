@@ -125,6 +125,7 @@ The scenario provided practical experience with:
 - Identifying phishing infrastructure
 
 The challenge demonstrated how individual phishing emails can be connected to a wider campaign rather than treated as isolated incidents.
+
 ---
 
 ## Phishing Unfolding — SOC Simulator
