@@ -220,7 +220,7 @@ It was particularly useful for developing my ability to investigate an alert usi
 - Attachments, URLs, domains, IP addresses and hashes can all provide useful indicators during an investigation.
 - Phishing attacks can be part of a larger attack chain rather than isolated events.
 - SIEM platforms can help analysts correlate multiple events and reconstruct an incident.
-- Legitimate tools such as PowerShell, Robocopy and nslookup can be abused by attackers, making process context important during investigations.
+- Legitimate tools such as PowerShell and nslookup can be abused by attackers, making process context important during investigations.
 - DNS can be abused as a covert channel for data exfiltration.
 - Effective phishing defence combines technical controls, monitoring, user awareness and incident response.
 - Analysts need to communicate findings clearly and document evidence throughout an investigation.
