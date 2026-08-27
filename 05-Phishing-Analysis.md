@@ -176,7 +176,7 @@ This reinforced the importance of clearly recording:
 - Why an alert should be classified or escalated
 - Recommended remediation actions
 
-### Key Takeaways
+### Key Takeaways of Phishing Unfolding
 
 The scenario demonstrated how a SOC analyst can move from an initial phishing alert to a wider investigation by correlating multiple sources of evidence.
 
@@ -191,7 +191,7 @@ It reinforced the importance of:
 - Attack chain reconstruction
 - Clear incident documentation
 
-**Skills applied:**
+**Skills applied during Lab:**
 
 - SIEM alert triage
 - Splunk
@@ -206,14 +206,13 @@ It reinforced the importance of:
 - Incident documentation
 - Case reporting
 
-### Reflection
+### Reflection of Phishing Unfolding
 
-The Phishing Unfolding scenario helped me understand how individual security alerts can form part of a much larger attack chain.
+The Phishing Unfolding scenario helped me understand how individual security alerts can form part of a much larger attack chain. It was particularly useful for developing my ability to investigate an alert using supporting log data, identify relationships between suspicious events and document findings in a structured SOC case report.
 
-It was particularly useful for developing my ability to investigate an alert using supporting log data, identify relationships between suspicious events and document findings in a structured SOC case report.
 ---
 
-# Key Takeaways
+# Key Takeaways Overall
 
 - Phishing investigations require analysis of both the visible email and underlying technical artefacts.
 - Email headers can provide valuable information about the origin and legitimacy of a message.
@@ -225,7 +224,7 @@ It was particularly useful for developing my ability to investigate an alert usi
 - Effective phishing defence combines technical controls, monitoring, user awareness and incident response.
 - Analysts need to communicate findings clearly and document evidence throughout an investigation.
 
-## Skills Developed
+## Skills Developed Overall
 
 - Phishing analysis
 - Email header analysis
@@ -245,12 +244,12 @@ It was particularly useful for developing my ability to investigate an alert usi
 - Attack chain reconstruction
 - Security documentation
 
-## Reflection
+## Reflection of Module
 
 This module significantly developed my understanding of phishing from both an analytical and defensive perspective.
 
 The earlier lessons helped me understand how to identify phishing indicators and investigate email artefacts, while the practical challenges allowed me to apply these techniques to individual phishing emails and campaigns.
 
-The **Phishing Unfolding** scenario was particularly valuable because it demonstrated how a SOC analyst can move from an initial phishing alert to reconstructing an entire attack chain using SIEM alerts and endpoint/network evidence.
+The **Phishing Unfolding** scenario was particularly valuable because it demonstrated how a SOC analyst can move from an initial phishing alert to reconstructing a wider attack chain using SIEM alerts and endpoint/network evidence.
 
 It reinforced the importance of **correlating individual events, understanding attacker behaviour and documenting evidence** when investigating a security incident.
