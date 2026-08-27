@@ -97,7 +97,7 @@ This required analysing the email beyond its visible contents and using technica
 - File hashing
 - Phishing detection
 
-The challenge reinforced the importance of analysing multiple indicators rather than relying solely on the appearance or content of an email. :contentReference[oaicite:1]{index=1}
+The challenge reinforced the importance of analysing multiple indicators rather than relying solely on the appearance or content of an email.
 
 ---
 
