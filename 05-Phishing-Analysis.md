@@ -124,8 +124,7 @@ The scenario provided practical experience with:
 - Threat intelligence
 - Identifying phishing infrastructure
 
-The challenge demonstrated how individual phishing emails can be connected to a wider campaign rather than treated as isolated incidents. :contentReference[oaicite:2]{index=2}
-
+The challenge demonstrated how individual phishing emails can be connected to a wider campaign rather than treated as isolated incidents.
 ---
 
 ## Phishing Unfolding — SOC Simulator
@@ -150,7 +149,7 @@ I analysed the subsequent activity and followed the attack through multiple stag
 8. **Data Exfiltration** — the staged data was exfiltrated through DNS tunnelling using encoded data within DNS queries.
 9. **Persistence / Continued Access** — further PowerShell and reverse-shell activity indicated attempts to maintain access.
 
-The investigation demonstrated how individual SIEM alerts can be correlated to reconstruct a wider attack chain. :contentReference[oaicite:3]{index=3} :contentReference[oaicite:4]{index=4} :contentReference[oaicite:5]{index=5}
+The investigation demonstrated how individual SIEM alerts can be correlated to reconstruct a wider attack chain. 
 
 ### Tools & Techniques
 
@@ -167,7 +166,7 @@ During the scenario, I worked with:
 - Incident documentation
 - Cyber Kill Chain analysis
 
-The scenario required analysing alerts and logs to identify the progression of the attack and understand the relationship between different events. :contentReference[oaicite:6]{index=6}
+The scenario required analysing alerts and logs to identify the progression of the attack and understand the relationship between different events.
 
 ### Key Findings
 
@@ -183,7 +182,7 @@ Several important indicators helped demonstrate the progression of the attack:
 - DNS tunnelling
 - Encoded data within DNS queries
 
-The combination of these indicators provided evidence of a wider compromise rather than isolated suspicious events. :contentReference[oaicite:7]{index=7} :contentReference[oaicite:8]{index=8}
+The combination of these indicators provided evidence of a wider compromise rather than isolated suspicious events. 
 
 ### Attack Chain Analysis
 
@@ -207,7 +206,7 @@ Potential response actions included:
 - Improving email security controls
 - Providing phishing awareness training
 
-The scenario demonstrated that investigation does not end when malicious activity is identified; analysts also need to consider containment, eradication and prevention of recurrence. :contentReference[oaicite:9]{index=9}
+The scenario demonstrated that investigation does not end when malicious activity is identified; analysts also need to consider containment, eradication and prevention of recurrence. 
 
 **Skills applied:**
 
