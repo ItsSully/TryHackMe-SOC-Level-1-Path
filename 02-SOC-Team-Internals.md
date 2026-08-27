@@ -44,9 +44,23 @@ Understanding SOC metrics provides insight into how effectively a security team 
 
 ### Introduction to Phishing
 
-I completed my first scenario using the **SOC Simulator** and was introduced to analysing phishing-related security events.
+I completed my first scenario using the **SOC Simulator**, focusing on the analysis of phishing-related alerts.
 
-This provided an opportunity to apply SOC concepts within a simulated investigation environment.
+The scenario provided practical experience with:
+
+* Monitoring and analysing real-time security alerts
+* Identifying suspicious emails and attachments
+* Documenting critical security events
+* Creating case reports based on observations
+* Understanding the scope of potentially malicious activity
+
+For the simulation, I selected **Splunk** as the SIEM platform.
+
+**Skill developed:** Phishing analysis, SIEM-based alert investigation and security case reporting.
+
+### Practical Experience
+
+The SOC Simulator provided an opportunity to apply the concepts covered in this module within a simulated SOC environment. Rather than only learning the theory behind alert handling, I practised analysing alerts and documenting findings as part of an investigation workflow.
 
 **Skill developed:** Phishing analysis and security alert investigation.
 
