@@ -1,6 +1,6 @@
 ## 📊 Progress
 
-**TryHackMe SOC Level 1 Path:** 🟢 Complete
+**TryHackMe SOC Level 1 Path:** 🟢 Completed
 
 **Modules Completed:** 14 / 14
 
