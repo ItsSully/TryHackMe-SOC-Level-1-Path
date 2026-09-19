@@ -1,10 +1,8 @@
 ## 📊 Progress
 
-**TryHackMe SOC Level 1 Path:** 🟢 55% Complete
+**TryHackMe SOC Level 1 Path:** 🟢 Complete
 
-**Modules Completed:** 7 / 14
-
-Currently progressing through the **Blue Team / SOC Analyst** curriculum.
+**Modules Completed:** 14 / 14
 
 ### Completed Modules
 
@@ -15,3 +13,10 @@ Currently progressing through the **Blue Team / SOC Analyst** curriculum.
 - ✅ Module 5 — Phishing Analysis
 - ✅ Module 6 — Network Traffic Analysis
 - ✅ Module 7 — Network Security Monitoring
+- ✅ Module 8 — Web Security Monitoring
+- ✅ Module 9 — Windows Security Monitoring
+- ✅ Module 10 — Linux Security Monitoring
+- ✅ Module 11 — Malware Concepts for SOC
+- ✅ Module 12 — Threat Analysis Tools
+- ✅ Module 13 — SIEM Triage for SOC
+- ✅ Module 14 — SOC Level 1 Capstone Chanllenges
