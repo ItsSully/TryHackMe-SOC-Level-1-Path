@@ -1,4 +1,4 @@
-# Digital Forensics & Incident Response
+# SOC Level 1 Capstone Challenges
 
 **TryHackMe SOC Level 1 — Module 14**  
 **Status:** ✅ Completed
